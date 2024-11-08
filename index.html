@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <script>
+        function showAlert() {
+            // Get values from the form fields
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+            
+            // Display an alert with the entered Name and Age
+            alert("Name: " + name + "\nAge: " + age);
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Simple Form</h2>
+    <form onsubmit="event.preventDefault(); showAlert();">
+        <!-- Name input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Age input field -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

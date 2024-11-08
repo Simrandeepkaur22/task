@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4a90e2;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 40px;
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        main p {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Ordered list styling */
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        ol li {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        ol li::marker {
+            color: red;
+        }
+
+        /* Image styling with hover effect */
+        .image-container {
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Button styling */
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Paragraph Section -->
+        <p>Happiness is something we can't describe in words; it can only be felt through someone's smile. Happiness is the sign of a prosperous life. It’s simple to feel but difficult to describe.</p>
+        
+        <!-- Ordered List -->
+            <ol>
+                <li>A smile is a universal language of kindness that everyone can understand.</li>
+                <li>It can brighten someone’s day, showing warmth and positivity without saying a word.</li>
+                <li>Smiling releases endorphins, boosting our mood and reducing stress.</li>
+                <li>It fosters connections, making others feel comfortable and welcomed.</li>
+                <li>A simple smile can make the world a better place, one person at a time.</li>
+            </ol>
+            
+        
+        <!-- Image with Hover Effect -->
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCU8lR6MMPZrfYmjJSa02FPIsNQyRqYyWG0A&s" alt="Sample Image">
+        </div>
+
+        <!-- Buttons to trigger JavaScript functions -->
+        <button onclick="showAlert()">Click Me</button>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made by Simrandeep Kaur</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showAlert() {
+            alert("Hello, world!");
+        }
+
+        function changeBackgroundColor() {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
